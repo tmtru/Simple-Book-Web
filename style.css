@@ -1,0 +1,272 @@
+body {
+  background-color: white;
+}
+.header {
+  display: flex;
+  background-color: #dddcdc;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#font_logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  position: relative;
+}
+#font_logo::before{
+  content:"";
+  width: 5px;
+  height: 30px;
+  background-color: #15c68b;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+}
+#icon_bars {
+  font-size: 25px;
+  padding-right: 25px;
+}
+#icon_logo {
+  margin: 10px 40px;
+  font-size: 25px;
+  background-color: #15c68b;
+  border-radius: 50%;
+  padding: 10px;
+}
+.navigation ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: 10px 0px;
+}
+
+.navigation .active{
+  color: white;
+  background-color: #15c68b;
+
+}
+.search_bar {
+  margin-right: 50px;
+  justify-items: center;
+}
+
+.search_bar input {
+  padding: 6px;
+  font-size: 17px;
+  border-radius: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #ffffff;
+  /* Màu của placeholder */
+}
+
+.search_bar {
+  padding: 6px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+
+  border: none;
+  border-radius: 20px;
+  background-color: #9e9e9e;
+}
+
+.search_bar button {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px;
+  float: right;
+}
+
+.search_bar button:hover {
+  background-color: #15c68b;
+  color: white;
+}
+
+#selected_image {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 0px;
+  border-top: rgb(21, 198, 139) 30px solid;
+  
+}
+#selected_image li{
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+}
+#selected_image img {
+  height: 500px;
+}
+.navigation li a {
+  padding: 10px 10px;
+  font-size: 20px;
+  margin: 0px 5px;
+
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  /* Set the width */
+  height: 20px;
+  /* Set the height */
+  color: black;
+}
+
+li a.navigation:hover {
+  color: white;
+  background-color: #15c68b;
+}
+.about {
+  display: flex;
+  background-color: #dfdede;
+  margin: 5px 10%;
+  border-radius: 10px;
+  justify-content: space-between;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 10px 0px;
+}
+.text_about {
+  margin: 30px;
+  width: 50%;
+} 
+.text_about h1 {
+  color: rgb(51, 117, 49);
+  margin-left: 10%;
+  font-size: 50px;
+}
+.text_about p {
+  color: rgb(21, 78, 14);
+  margin-left: 10%;
+  margin-bottom: 10%;
+  overflow: auto;
+  font-size: 20px;
+  height: 180px;
+
+
+}
+.picture_about {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+
+}
+.picture_about img {
+  width: 100%;
+  height: auto;
+border-radius: 0 10px 10px 0;
+}
+.books_of_week h1 {
+  background-color: #15c68b;
+  text-align: center;
+  margin: 50px 100px 25px 100px;
+
+}
+.books_of_week ol {
+  display: flex;
+  margin: 0px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.books_of_week li {
+  width: 300px;
+  text-align: center;
+  list-style: none;
+  padding-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+.books_of_week div{
+      display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px 0px;
+        border-top: #9e9e9e 10px solid;
+        
+}
+.books_of_week img {
+  width: 200px;
+  height: auto;
+}
+.books_of_week h2 {
+  text-align: center;
+}
+.books_review h1{
+    text-align: center;
+      background-color: #15c68b;
+        text-align: center;
+
+}
+.books_review {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px 25px 10px;
+}
+.review_bar {
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.review_bar>.review {
+  padding: 0 30px;
+}
+.review_bar p {
+  height: 220px;
+  overflow: auto;
+}
+.review_bar img {
+  width: 15em;
+  height: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 1010px) {
+
+  .picture_about{
+    display: none;
+  }
+  .text_about {
+    width: 100%;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search_bar {
+    margin-right: 10px;
+  }
+  .search_bar input{
+    display: none;
+  }
+  .search_bar button {
+    font-size: 15px;
+  }
+  ul {
+    padding-left: 0px;
+  }
+
+  li a.navigation {
+    font-size: 15px;
+    padding: 5px 5px;
+    margin-left: 0px;
+
+  }
+
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/aab0c35bef.js" crossorigin="anonymous"></script>
+    <script src="updateImg.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <div>
+            <i class="fa-solid fa-user" id="icon_logo"></i>
+            <span id="font_logo">TMTBooks</span>
+        </div>
+
+        <div class="header">
+            <!-- <img src="" alt="logo TMTBooks" /> -->
+            <div class="navigation">
+
+
+                <ul>
+                    <li><i class="fa-solid fa-bars" id="icon_bars"></i></li>
+                    <li><a href="index.html" >Home</a></li>
+
+                    <li><a href="bookgenres.html" class="active">Book Genres</a></li>
+
+
+                    <li><a href="reviewbooks.html">Review</a></li>
+
+                </ul>
+            </div>
+
+            <form class="search_bar">
+                <input type="text" placeholder="" name="search" onfocus="chooseSearchBar(this)">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass" id="icon_search"></i></button>
+            </form>
+        </div>
+        <div id="selected_image">
+
+        </div>
+
+
+        <div class="books_of_week">
+            <h1>Novel</h1>
+            <ol>
+                <div onclick="update(this)">
+                    <li>On Earth We're Briefly Gorgeous</li>
+                    <img src="pictures/41880609.jpg" alt="" />
+                </div>
+
+                <div onclick="update(this)">
+                    <li>The Kite Runner</li>
+                    <img src="pictures/77203.jpg" alt="" />
+                </div>
+
+                <div onclick="update(this)">
+                    <li>The Little Prince</li>
+                    <img src="pictures/157993.jpg" alt="" />
+                </div>
+                <div onclick="update(this)">
+                    <li>Gone with the Wind</li>
+                    <img src="pictures/18405.jpg" alt="" />
+                </div>
+                <div onclick="update(this)">
+                    <li>The Hound of the Baskervilles</li>
+                    <img src="pictures/8921.jpg" alt="" />
+                </div>
+            </ol>
+            <h2>Follow more in <a href="https://the-week-bookshop.myshopify.com/collections/book-of-the-week">Web</a>
+            </h2>
+        </div>
+        <div class="books_of_week">
+            <h1>Psychology Books</h1>
+            <ol>
+                <div>
+                    <li>Genius on the Left, Lunatic on the Right</li>
+                    <img src="pictures/50908574.jpg" alt="" />
+                </div>
+        
+                <div>
+                    <li>Dai Duong Den</li>
+                    <img src="pictures/images.jpg" alt="" />
+                </div>
+        
+                <div>
+                    <li>The Psychology Book (Big Ideas)</li>
+                    <img src="pictures/the_psychology_book__big_ideas_simply_explained_-01_a01fdcc2769f4c5dbc750a1b9afb22cf.webp" alt="" />
+                </div>
+                <div>
+                    <li>The Power of Your Subconscious Mind</li>
+                    <img src="pictures/power-of-your-subconscious-mind.webp" alt="" />
+                </div>
+            </ol>
+            <h2>Follow more in <a href="https://the-week-bookshop.myshopify.com/collections/book-of-the-week">Web</a>
+            </h2>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
